@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+::selection {
+    background: #1a4420;
+    color: #e7e4e4;
+}
+header {
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    justify-content: center;
+    margin: 2rem 0;
+}
+h1 {
+    border-bottom: 1.2px solid #000000;
+}
+main {
+    padding: 12rem;
+    background: linear-gradient(#6d6c6c, #504f4f, #353434);
+    margin: auto;
+    width: 25%;
+    border-radius: 2rem;
+    min-height: 60vh;
+    position: relative;
+}
+main h3 {
+    position: absolute;
+    top: 2rem;
+    font-size: 2.4rem;
+    color: #f1f1f1;
+    border-bottom: 1.2px solid #f1f1f1;
+}
+#show-objects {
+    padding: 100px 170px;
+    color: #f1f1f1;
+    font-size: 1.2vw;
+    outline: 0;
+}
+input {
+    margin: 15px 10px;
+    width: 9vw;
+    padding: 7px;
+    border: 0;
+    background: 0;
+    transition: border-bottom .2s;
+    border-bottom: 2px solid #f1f1f1;
+    font-size: 1.2vw;
+    font-weight: 200;
+    color: #f1f1f1;
+}
+input:focus {
+    border-bottom: 3px solid #1a4420;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+button, input {
+    outline: 0;
+}
+button {
+    width: 10vw;
+    padding: 10px 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background .4s;
+    transition: border .3s;
+    border: 1px solid #f4f4f4;
+    font-size: 1vw;
+}
+button:hover {
+    border: 1px solid #f1f1f1;
+    background: #747272;
+    color: #f3f3f3;
+    animation-name: animation-button;
+    animation-iteration-count: 3;
+    animation-duration: 2s;
+    transition: background .3s;
+}
+@keyframes animation-button {
+    to {
+        background: linear-gradient(#7c7a7a, #5c5a5a, #575656);
+    }
+    from {
+        background: linear-gradient(#6d6c6c, #555454, #3d3c3c);
+    }
+}
+input::placeholder {
+    color: #8a8888;
+    font-size: 1rem;
+}
+.user {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 2fr 2fr;
+}
+footer {
+    background: #606060;
+    margin-top: 2rem;
+    padding: 10rem 0;
+    font-size: 1.2vw;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    color: #f1f1f1;
+}
+footer h3, p {
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+footer h3 {
+    border-bottom: 2px solid #f1f1f1;
+    width: 20vw;
+}
+.fab {
+    color: #f1f1f1;
+    font-size: 2.2vw;
+    border-bottom: 2px solid #f1f1f1;
+}
